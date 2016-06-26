@@ -1,0 +1,37 @@
+
+<br>
+
+<div>
+	<a ng-href="#/auteurs/"   class="btn btn-info">retour liste auteurs</a>
+</div>
+
+<h1>{{auteur.nom}} {{auteur.prenom}} </h1>
+<div>
+<h2>{{auteur.fonction}}</h2>
+
+</div>
+<div class="form-group" >
+		<form class="form-inline" ng-submit="modifAuteur(auteur.id_auteur)">
+		    <div>
+			    <label>Nom    </label>
+				<input type="text" name="" value="nom" class="form-control" ng-model="newNom" placeholder="Enter nom">
+				{{newNom}}
+
+			</div>
+			<div>
+				<label>Prenom</label>
+				<input type="text" name="" value="prenom" class="form-control" ng-model="newPrenom" placeholder="Enter prenom">
+				{{newPrenom}}
+			</div>
+			<div>
+				<label>Fonction</label>
+				<input type="text" name="" value="fonction" class="form-control" ng-model="newFonction" placeholder="Enter fonction">
+				{{newFonction}}
+			</div>
+			
+				<input type="submit" name="" value="Envoyer" class="btn btn-info">
+				
+			
+		</form>
+	</div> 
+</div>

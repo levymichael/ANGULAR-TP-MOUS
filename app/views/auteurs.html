@@ -1,0 +1,33 @@
+<h2>Auteurs</h2>
+
+<table class="table table-striped">
+	<div class="container">
+		
+<div class="container">
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+      	<th>Number</th>
+        <th>Lastname</th>
+        <th>Firstname</th>        
+        <th>métier</th>
+        <th>edit</th>        
+        <th>delete</th>
+        <th>info</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr  ng-repeat="auteur in auteurs">
+      	<td>{{auteur.id_auteur}}</td>
+        <td>{{auteur.nom}}</td>
+        <td>{{auteur.prenom}}</td> 
+        <td>{{auteur.fonction}}</td>        
+        <td><a ng-href="#/edit/{{auteur.id_auteur}}"  class="btn btn-warning">modify</a></td>
+        <td><a ng-click="" class="btn btn-danger">delete</a></td>
+        <td><a ng-href="#/auteur/{{auteur.id_auteur}}"   class="btn btn-info"> info</a></td>
+        </tr>
+    </tbody>
+  </table>
+  </div>
+
